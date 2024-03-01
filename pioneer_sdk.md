@@ -96,10 +96,10 @@ land()
 ```python
 led_control(led_id=255, r=0, g=0, b=0)
 ```
-###### Params:
+##### Params:
 * `led_id` - номер светодиода для управления. (255 - все светодиоды; 0-3 - светодиоды от 1 до 4).
 * `r`, `g`, `b` - каналы по управлению красным зелёным и синим свечением светодиода 0-255 - интенсивность соответствующего канала.
-###### Result:
+##### Result:
 Turn on the LEDs. Returns True if the result is "ACCEPTED" or "DENIED";
 Returns False if the result is “SEND_TIMEOUT", “TEMPORARILY_REJECTED", “UNSUPPORTED", “FAILED", “CANCELLED";
 <br>
