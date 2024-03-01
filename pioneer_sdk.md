@@ -90,7 +90,7 @@ There are no expicit arguments. The takeoff height is set by the Flight_com_take
 land()
 ```
 ##### Result:
-Выполняет команду на посадку. Возвращает True, если результат „ACCEPTED“ или „DENIED”; Возвращает False, если результат „SEND_TIMEOUT“, „TEMPORARILY_REJECTED”, „UNSUPPORTED“, „FAILED“, „CANCELLED”
+Выполняет команду на посадку. Возвращает True, если результат "ACCEPTED“ или "DENIED"; Возвращает False, если результат "SEND_TIMEOUT“, "TEMPORARILY_REJECTED", "UNSUPPORTED“, "FAILED“, "CANCELLED"
 <br>
 <br>
 ```python
@@ -101,7 +101,7 @@ led_control(led_id=255, r=0, g=0, b=0)
 * `r`, `g`, `b` - каналы по управлению красным зелёным и синим свечением светодиода 0-255 - интенсивность соответствующего канала.
 ###### Result:
 Turn on the LEDs. Returns True if the result is "ACCEPTED" or "DENIED";
-Returns False if the result is “SEND_TIMEOUT”, “TEMPORARILY_REJECTED”, “UNSUPPORTED”, “FAILED”, “CANCELLED”;
+Returns False if the result is “SEND_TIMEOUT", “TEMPORARILY_REJECTED", “UNSUPPORTED", “FAILED", “CANCELLED";
 <br>
 <br>
 ```python
@@ -133,6 +133,7 @@ set_manual_speed(vx, vy, vz, yaw_rate)
 ##### Result:
 Sending the flight command at the specified speed. The coordinates are specified in the local coordinate system;
 Returns True if the command is sent successfully, False - if it was not possible to send or a refusal is received;
+##### Note
 The `set_manual_speed` command should be sent not once, but constantly, while you need to fly at the specified speed!
 <br>
 <br>
@@ -145,6 +146,7 @@ set_manual_speed_body_fixed(vx, vy, vz, yaw_rate)
 ##### Result:
 Sending the flight command at the specified speed. The coordinates are specified in the coordinate system of the drone;
 Returns True if the command is sent successfully, False - if it was not possible to send or a refusal is received;
+##### Note:
 The `set_manual_speed_body_fixed` command should be sent not once, but constantly, while you need to fly at the specified speed.
 <br>
 <br>
