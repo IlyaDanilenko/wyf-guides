@@ -63,7 +63,7 @@ set_log_connection(value=True)
 Установка флага `log_connection` в True или False.
 <br>
 <br>
-```
+```python
 arm()
 ```
 ##### Result:
