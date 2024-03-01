@@ -23,21 +23,21 @@ Pioneer(name='pioneer', ip='192.168.4.1', mavlink_port=8001, connection_method='
 * `logger` - MAVLink message logs. True - output to the console; False – do not display
 * `log_connection` - connection logs. True — output to the console; Lie - do not deduce
 #### Pioneer class methods
-```
+```python
 connected()
 ```
 ##### Result:
 Returns False if the connection is lost (no messages from the drone within a second), returns True if the connection is stable.
 <br>
 <br>
-```
+```python
 close_connection()
 ```
 ##### Result:
 Closes the MAVLink connection to the drone.
 <br>
 <br>
-```
+```python
 reboot_board()
 ```
 ##### Result:
