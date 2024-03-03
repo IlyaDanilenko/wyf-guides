@@ -4,7 +4,7 @@ pioneer_sdk is a Python 3 module for programming Geoscan Pioneer with the Pizero
 ## Installation
 Run in terminal:
 ```shell
-python3 -m pip install git+https://github.com/geoscan/pioneer_sdk.git@wyf2024
+python -m pip install git+https://github.com/geoscan/pioneer_sdk.git@wyf2024
 ```
 
 ## API Docs
